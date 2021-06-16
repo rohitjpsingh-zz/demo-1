@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #eff5f9;
+}
+main {
+  background: white;
+  margin: 0 auto;
+  width: 70%;
+  padding: 4%;
+}
+@media only screen and (max-width: 529px) {
+  main {
+    width: 100%;
+  }
+}
+main > p {
+  font-size: 1.1rem;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #3d789a;
+}
+h1 i {
+  color: #009eff;
+  margin-right: 0.5rem;
+}
+h2 {
+  margin-top: 2rem;
+  color: #3d789a;
+}
+p {
+  margin-top: 0;
+}
+p,
+dt {
+  color: #68757d;
+}
+p,
+dd {
+  line-height: 1.5;
+}
+hr {
+  position: relative;
+  margin-top: 2rem;
+  border: 1px solid transparent;
+}
+hr:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #009eff, transparent);
+  opacity: 0.25;
+}
+dt {
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+dt:before {
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  height: 100%;
+  font-family: 'FontAwesome';
+  content: '\f078';
+  opacity: 0.25;
+  color: #009eff;
+  transition: opacity 0.5s ease-out;
+}
+dt:after {
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  height: 100%;
+  font-family: 'FontAwesome';
+  content: '\f077';
+  opacity: 0;
+  color: #009eff;
+  transition: opacity 0.4s ease-out;
+}
+dt.toggled:before {
+  opacity: 0;
+}
+dt.toggled:after {
+  opacity: 0.8;
+}
+dt.toggled:hover:before {
+  opacity: 0;
+}
+dt:hover:before {
+  opacity: 0.8;
+}
+dd {
+  position: relative;
+  top: 0;
+  left: 2rem;
+  color: #47555e;
+  background: linear-gradient(to right, #ebf7fe, transparent);
+  padding: 1rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  display: block;
+  transition: left 0.4s ease-out;
+}
+dd.toggled {
+  left: 0;
+}

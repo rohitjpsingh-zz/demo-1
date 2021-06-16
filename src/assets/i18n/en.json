@@ -1,0 +1,145 @@
+{
+  "ContactModule": {
+    "contact": "Contact",
+    "get_in_touch": "Get In Touch",
+    "fardos_dev": "Fardos.dev",
+    "send_us_a_message": "Send Us A Message",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit",
+    "sending": "Sending",
+    "success_message": "Your message was sent, thank you",
+    "contact_info": "Contact Information",
+    "where_to_find_us": "Where to Find Us",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedIn": "LinkedIn",
+    "tikTok": "TikTok",
+    "youtube": "Youtube",
+    "email_us_at": "Email Us At",
+    "chat_us_at": "Chat Us At",
+    "our_chat_link": "Our Chat Link",
+    "frequently_asked_questions": "Frequently Asked Questions",
+    "form_submit_success" : "Congrats!! Your Form Submittted Successfully",
+    "form_error_success" : "Please fill all details"
+  },
+
+  "HomeModule": {
+    "we_craft_stunning" : "We Craft Stunning",
+    "digital_experiences": "Digital Experiences",
+    "we_are": "We Are",
+    "testmonials": "Quotes",
+    "contact_us": "Contact Us",
+    "services": "Our Services",
+    "pricing": "Pricing",
+    "about": "About",
+    "links": "Links",
+    "faq": "Faq",
+    "home": "Home",
+    "learn_more": "Learn More",
+    "footer":"links",
+    "blog":"Our Blog",
+    "portfolio":"Our Projects"
+  },
+
+  "TestimonialsModule": {
+    "quotes_of_the_day" : "Quotes of the Day",
+    "quote_1": "We know what we are, but know not what we may be",
+    "quote_1_writer": "William Shakespeare",
+    "quote_1_info": "Author Profession: Playwright",
+    "quote_2": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart",
+    "quote_2_writer": "Helen Keller",
+    "quote_2_info": "Author Profession: Author"
+  },
+
+  "ServiceModule": {
+    "services" : "Services",
+    "what_we_do": "What We Do",
+    "brief": "At Fardos, we provide Website Systems made for your specific needs. All we want is to help you build your online presence with minimum costs for domain name, hosting, and database. We aim to achieve success for you and the sky's the limit. We specialise in several essential services, varying from web design, branding and SEO.",
+    "branding": "Branding",
+    "brand_info": "A brand is a name, term, design, symbol, or any other feature that identifies your goods or services, enabling you and others to distinguish your brand from others. Brands are used in business, marketing, and advertising for recognition and, more importantly, to create and store value as brand equity for the object identified to benefit the brand's customers, owners, and shareholders. We can help you create a strong brand identity and strategy by understanding why your business exists, how you work, and your vision for your business.Name brands are often differentiated from generic or store brands. We at Fardos assist you in building your brand with a logo design that portrays your vision, suits your business, and is unique to you. To ensure that the logo we create for you is one that you love, we get it endorsed by you before finalising it." ,
+    "web_design": "Web Design",
+    "web_design_info": "Web development is the work involved in developing a Web site for the Internet World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), and social network services. We will usually use some online templates crafted with lots of love from websites like thewagon or colorlib etc, or if you are looking for a custom-built website that is a service we also offer. Honesty is one of our values and one thing for sure is that we do not lie about where we have obtained a template or website design from.",
+    "web_develop": "Web Development",
+    "web_info": "Similar to WordPress and many other content management systems all over the world, we believe in giving clients freedom and no dependency on us developers. At Fardos, we essentially provide you with a fast website that runs smoothly and is built and updated occasionally to keep up with technology since technology is known to advance as we speak.",
+    "marketing": "Marketing",
+    "Back":"<Back",
+    "marketing_info": "Marketing is a vital step in enabling your business to reach new heights, and it is, what effectively creates the difference between you and your competitors. We efficiently use the results of studying short term and long-term needs of those who can pay for a one-time, or in most cases, a steady flow of service or product placement. We guarantee that SEO and your marketing plan compared to others is one that is strong and productive. With the best practices and tools at hand, we make sure that your business or service can be found easily on Google and other search engines."
+  },
+
+  "AboutModule":{
+    "about_us": "About Us",
+    "info": "is a creative digital agency that provides modern day solutions. We are composed of creative designers and experienced developers"
+  },
+
+  "PricingModule":{
+    "starter": "Starter",
+    "month": "month",
+    "linux_web_space": "Linux Web Space",
+    "mysql_databases":"MySQL Databases",
+    "unlimited_email": "Unlimited Email",
+    "mo_transfer": "mo Transfer",
+    "tech_support": "Tech Support",
+    "daily_backups":"Daily Backups",
+    "select_plan": "Select Plan",
+    "basic":"Basic",
+    "professional":"Professional",
+    "ultra":"Ultra"
+  },
+
+  "FooterModule":{
+    "info" : "Fardos Solutions consists of aspiring and innovative creators from. They are talented and have tons of experience satisfying their customers",
+    "follow_us": "Follow Us",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram",
+    "linkedIn": "LinkedIn",
+    "tikTok": "TikTok",
+    "youtube": "Youtube",
+    "get_notified": "Get Notified",
+    "notify_info": "It is strictly for professional purposes. We will not Spam you either. We will never share your email address with any corporation what so ever",
+    "copyright": "Copyright Infinity 2016",
+    "design_by": "Design by",
+    "subscribe":"Subscribe",
+    "medium":"Medium"
+  },
+
+  "FaqModule":{
+    "main_head":"Millions of customers rely on our solutions and web systems to get their ideas online",
+    "faq": "Frequently Asked Questions",
+    "question_1": "Why Choose us over any other",
+    "ans_1": "Simply, because we work with the newest of technologies in order to provide you with a website that has a fast-loading time and quality maintenance. We offer the cheapest prices for effective and top-notch websites, SEO, marketing, and web designs. Other than that, we help and guide our clients along the way, ensuring that our clients are happy.",
+    "question_2": "Support & Maintenance",
+    "ans_2": "We know it can be tough for those who are not familiar with technical language and issues, therefore, we support our clients throughout the whole process. Support and maintenance is what we stand and work for, and satisfied clients are what we love to see.",
+    "question_3": "Who are We",
+    "ans_3":"We are a Software Company that believes in Open-source code. We are firm believers of the free world belonging to the people and we provide our clients with Honesty and Clarity.",
+    "question_4": "Do you provide deployment support",
+    "ans_4": "Yes, we offer our clients deployment support, including support for AWS, Heroku, Azure, Firebase, GoDaddy, Digital Ocean etc.",
+    "question_5": "Do you provide post deployment support",
+    "ans_5":"We do provide our clients with post deployment support. If there are any issues with the software or you request for improvements to be made, we are always happy to assist you.",
+    "question_6":"Do you buy domains or provide hosting",
+    "ans_6": "Depending on what our client requires, hosting could be provided on any host site for our clients, for example, aws, firebase, Azure, GoDaddy, Digital Ocean, and many more. We can buy the domain name and hosting for our clients if that is what they require. Domain names can be found on Google, where we can purchase them for you and handle them too as per your requirements. It is up to our clients to choose the timespan of hosting that can usually be 1, 2, or 3 years.",
+    "question_7":"Do you have any plans for hosting",
+    "ans_7": "Yes, we provide our clients with several plans that vary from hosting for small/medium businesses to large enterprises. We tailor these plans according to the needs and requirements of our clients to support them in the best way possible.",
+    "question_8":"Is SEO included in all these plans",
+    "ans_8":"Yes, SEO is included in every service we provide and where it is applicable. SEO is an essential step to increase the reach and rank of any website. It helps the websites rank higher on search engines, enabling your potential clients to reach you and have access to the services or products you offer.",
+    "question_9":"Do you provide LOGO with website",
+    "ans_9":"If your business does not have a logo, and you are looking for someone to create it, do not worry, as we at Fardos can build you a custom-made logo that suits your business's idea and requirements.",
+    "question_10":"What if we are not satisfied",
+    "ans_10":"We will try our best to satisfy your requirements; however, if you're not happy, you will get your refund in a matter of minutes.",
+    "question_11":"What are the refund policies",
+    "ans_11":"Our refund policy is simple: If you are not satisfied with our work, you will get your money back instantly. However, the timing of the refund getting back to you depends on the service you have used to pay us.",
+    "Back":"<Back"
+
+  },
+  "OtherModule":{
+    "privacy_label":"Privacy Policies",
+    "privacy_content":"Privacy Policies Content",
+    "tc_label":"Terms & Conditions",
+    "tc_content":"Terms & Conditions Content",
+    "lorem_ipsum":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  }
+}

@@ -1,0 +1,24 @@
+
+   <!-- about
+   ================================================== -->
+  
+
+   <section id="about">
+    <button [ngClass]="lang" (click)="goBack()" class="back">
+        {{'FaqModule.Back' | translate }}
+      </button>
+    <div class="row about-wrap">
+        <div class="col-full">
+
+            <div class="about-profile-bg"></div>
+
+             <div class="intro">
+                 <h3 class="animate-this" [ngClass]="lang">{{'AboutModule.about_us' | translate }}</h3>
+                <p class="lead animate-this" [ngClass]="lang"><span [ngClass]="lang">Fardos.dev</span> {{'AboutModule.info' | translate }}.
+                </p>
+             </div>
+
+        </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+
+</section> <!-- end about -->

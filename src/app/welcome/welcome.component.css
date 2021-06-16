@@ -1,0 +1,156 @@
+
+
+.faq{
+    position: relative;
+    padding: 4.2rem 0 12rem;
+    background-color: #FFFFFF;
+    min-height: 696px;
+    text-align: center;
+}
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+  .rtl {
+    text-align: right;
+  } 
+  details > .rtl::after {
+    left: 20px;
+    right: unset;
+  }
+  details[open] > .rtl::after {
+    left: 20px;
+    right: unset;
+  }
+
+  #services .service-item .service-content  p{
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 400px){
+    .home-content-tablecell .row {
+        padding-top: 13.8rem;
+        padding-bottom: 10.8rem;
+    }
+}
+
+
+/* This is drawer CSS */
+.index_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.index_navbar{
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  z-index: 99;
+  flex: 0 0 auto;
+  height: 2.48148rem;
+  padding: 10px;
+}
+.index_back{
+  left: 3.5555rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.27778rem;
+  width: 2.5rem;
+  font-size: 0.51852rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.index_page-title{
+  margin-bottom: 3.37037rem;
+  flex: 0 0 auto;
+  font-size: 4.81481rem;
+  color: #333333;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.index_scroll{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.index_container{
+  width: 45rem;
+  max-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 0.92593rem;
+  display: flex;
+  flex-direction: column;
+}
+.index_content{
+  position: relative;
+}
+.index_item{
+  padding: 0.44444rem 1.11111rem 0.44444rem 0.74074rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index_area{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5555rem;
+  line-height: 6.59259rem;
+  color: #000000;
+}
+
+
+@media only screen and (max-width: 450px){
+  .index_page-title {
+      font-size: 3.44444rem;
+      margin-bottom: 2.37037rem;
+      margin-top: 60px;
+      margin-bottom: 2.37037rem;
+  }
+  .index_container{
+      width: 100%;
+      padding: 15px;
+  }
+  .index_area{
+      font-size: 1.5555rem;
+  }
+  .index_back{
+      left: 1.5555rem;
+  }
+}

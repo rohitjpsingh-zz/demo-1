@@ -1,0 +1,76 @@
+{
+    "ContactModule": {
+      "contact": "צור קשר",
+      "get_in_touch": "צור קשר",
+      "fardos_dev": "Fardos.dev",
+      "send_us_a_message": "שלח לנו הודעה",
+      "name": "שם",
+      "email": "אימיייל אלקטורני",
+      "subject": "נושא",
+      "message": "הודעה",
+      "submit": "שלח",
+      "sending": "שולח",
+      "success_message": "ההודעה נשלחה,  תודה",
+      "contact_info": "פרטי התקשרות",
+      "where_to_find_us": "איפה למצוא אותנו",
+      "facebook": "פייסבוק",
+      "twitter": "טוויטר",
+      "instagram": "אינסטגרם",
+      "linkedIn": "לינקדין",
+      "tikTok": "טיקטוק",
+      "youtube": "יוטיוב",
+      "email_us_at": "שלח אימיייל ",
+      "chat_us_at": "תתכתב איתנו",
+      "our_chat_link": "לינק לצ׳אט",
+      "frequently_asked_questions": "שאלתות נפוצות ביותר",
+      "form_submit_success" : "מזל טוב!! הטופס שלך נשלח בהצלחה",
+      "form_error_success" : "אנא מלא את כל הפרטים"
+    },
+
+    "HomeModule": {
+      "we_craft_stunning" : "אנו יוצרים חוויות מדהימות",
+      "digital_experiences": "דיגיטלית",
+      "we_are": "אנחנו",
+      "testmonials": "ציטוטים",
+      "contact_us": "צור קשר",
+      "services": "השירותים שלנו",
+      "pricing": "מחירים",
+      "about": " אודות",
+      "links": "לינקים",
+      "faq": "שאלות נפוצות ביותר"
+      ,"blog":"הבלוג שלנו"
+    },
+
+    "TestimonialsModule": {
+      "quotes_of_the_day" : "ציטוט היום",
+      "quote_1": "We know what we are, but know not what we may be",
+      "quote_1_writer": "וויליאם שייקספירe",
+      "quote_1_info": "Author Profession: Playwright",
+      "quote_2": "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart",
+      "quote_2_writer": "הלן קלר",
+      "quote_2_info": "Author Profession: Author"
+    },
+
+    "ServiceModule": {
+      "services" : "Services",
+      "what_we_do": "What We Do",
+      "brief": "We provide Website  Systems made for your needs ,All we want is to help you build your online presence with minimum costs for domain name , hosting , database and we want you to succeed , we have no limitations at all",
+      "branding": "Branding",
+      "brand_info": "A brand is a name, term, design, symbol or any other feature that identifies one seller's good or service as distinct from those of other sellers. Brands are used in business, marketing, and advertising for recognition and, importantly, to create and store value as brand equity for the object identified, to the benefit of the brand's customers, its owners and shareholders. Name brands are sometimes distinguished from generic or store brands. We will help you build your brand with logo design that suits your business and be unique to you only and after that is done we send you to approve" ,
+      "web_design": "Web Design",
+      "web_design_info": "Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps), electronic businesses, and social network services. We  will usually use some online templates crafted with lots of love from websites like  thewagon or colorlib etc ,  or if you like to build custom sketches and design it from scratch , but one thing for sure we will not lie where the template or website design is coming from",
+      "web_develop": "Web Development",
+      "web_info": "We believe in giving the client the freedom and no dependcy on us developes , As we can see its been working in wordpress and many other content managment  systems all over the world .What we do is basically provide you with a fast website that runs smoothly all the time and built and updated occasionaly to keep up with technology  , Since  it advances as we speak",
+      "marketing": "Marketing",
+      "marketing_info": "Marketing is profitably using the results of studying short term and long term needs of those who can pay for a one-time, or in most cases, a steady flow of service or product placement. We will make sure SEO and your marketing plan compared to others is valid and we will use the best practices at hand to make sure google and all search engines will find you easily"
+    },
+
+    "AboutModule":{
+      "about_us": "אודותינו",
+      "info": "is a creative digital agency that provides modern day solutions. We are composed of creative designers and experienced developers"
+    },
+
+    "PricingModule":{
+      "starter": "Starter"
+    }
+  }

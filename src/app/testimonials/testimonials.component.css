@@ -1,0 +1,30 @@
+img{
+    float: left;
+}
+
+.ltr p::before {
+  content: '\201D'!important;
+}
+.ltr p::after {
+  content: '\201C'!important;
+}
+.rtl p::before {
+  content: '\201C';
+}
+.rtl p::after {
+  content: '\201D';
+}
+.back{
+  background: transparent;
+  font-size: smaller;
+  float: left;
+  /* text-decoration: underline;     */
+  top: 1px;
+  left: 1px;
+  position: absolute;
+  color: black;
+
+}
+.back:hover{
+  background: transparent;
+}

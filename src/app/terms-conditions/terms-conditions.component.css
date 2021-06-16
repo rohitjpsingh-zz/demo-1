@@ -1,0 +1,70 @@
+
+#privacy {
+    background-color: #fff;
+}
+.faq-title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.heading {
+    color: #d19f68;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 0px;
+    padding-top: 40px;
+}
+
+.policy-body {
+    padding-bottom: 30px;
+}
+
+.slider-area2 {
+    background-image: url(https://barber-s.herokuapp.com/assets/img/hero/hero2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-height2 {
+    height: 450px;
+    background-size: cover;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+
+.d-flex {
+    display: flex!important;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hero-cap {
+    margin-top: 60px;
+}
+.slider-area2 .hero-cap h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+@media (max-width: 575px) {
+    .slider-area2 .hero-cap h2 {
+        font-size: 35px;
+    }
+    .slider-height2 {
+        height: 260px;
+    }
+}

@@ -1,0 +1,73 @@
+<!-- header 
+   ================================================== -->
+<header>
+
+  <div class="header-logo">
+    <a routerLink="/">Fardos</a>
+  </div>
+
+  <a id="header-menu-trigger" href="#0">
+    <span class="header-menu-text">Menu</span>
+    <span class="header-menu-icon"></span>
+  </a>
+
+  <nav id="menu-nav-wrap">
+
+    <a href="#0" class="close-button" title="close"><span>Close</span></a>
+
+    <h3>Fardos.dev</h3>
+
+    <ul class="nav-list">
+      <li><a class="smoothscroll" routerLink="/" title="">{{'HomeModule.home' | translate }}</a></li>
+      <li><a class="smoothscroll" href="#about" title="">{{'HomeModule.about' | translate }}</a></li>
+      <li><a class="smoothscroll" href="#services" title="">{{'HomeModule.services' | translate }}</a></li>
+      <li><a class="smoothscroll" href="#portfolio" title="">{{'HomeModule.portfolio' | translate }}</a></li>
+      <li><a class="smoothscroll" routerLink="/contact" title="">{{'HomeModule.contact_us' | translate }}</a></li>
+      <li><a class="smoothscroll" href="#faq" title=""> {{'HomeModule.faq' | translate }}</a></li>
+      <li><a class="smoothscroll" href="#testimonials" title=""> {{'HomeModule.testmonials' | translate }}</a></li>
+      <li><a class="" title="" href="https://fardos-dev.medium.com">{{'HomeModule.blog' | translate }}</a></li>
+      <li><a class="smoothscroll" routerLink="/privacy-policies" title="">{{'OtherModule.privacy_label' | translate }}</a></li>
+      <li><a class="smoothscroll" routerLink="/terms-conditions" title="">{{'OtherModule.tc_label' | translate }}</a></li>
+    </ul>
+
+    <ul class="header-social-list">
+      <li>
+        <a (click)="switchLang('ar')" title="arabic" style="cursor: pointer;">ar</a>
+      </li>
+      <li>
+        <a (click)="switchLang('he')" title="hebrew" style="cursor: pointer;">he</a>
+      </li>
+      <li>
+        <a (click)="switchLang('en')" title="english" style="cursor: pointer;">en</a>
+      </li>
+      <li>
+        <a (click)="switchLang('ru')" title="russian" style="cursor: pointer;">ru</a>
+      </li>
+    </ul>
+   
+    <ul class="header-social-list">
+      <li>
+        <a href="https://www.facebook.com/Fardos.dev"><i class="fa fa-facebook-square"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/DevFardos"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/fardos.dev/"><i class="fa fa-instagram"></i></a>
+      </li>
+
+      <li>
+        <a href="https://www.youtube.com/channel/UCN_trwCWoIaPOpEQK8qSu6w?view_as=subscriber"><i
+            class="fa fa-youtube"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/fardos-sol/"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://fardos-dev.medium.com/"><i class="fa fa-medium"></i></a>
+    </li>
+    </ul>
+
+  </nav> <!-- end #menu-nav-wrap -->
+
+</header> <!-- end header -->

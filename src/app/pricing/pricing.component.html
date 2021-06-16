@@ -1,0 +1,157 @@
+<!-- ------------------------For Left to Right Flow------------------------- -->
+<button [ngClass]="lang" (click)="goBack()" class="back">
+  {{'FaqModule.Back' | translate }}
+</button> 
+<div class="snip1404" *ngIf="!checkForRTL()" style="background-image:linear-gradient(45deg,purple,orange)" >
+  <div class="plan">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+        {{'PricingModule.starter' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$19</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+      <li><i class="ion-checkmark"> </i>5GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>5 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>250Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <div class="plan-select"><a href="">{{'PricingModule.select_plan' | translate }}</a></div>
+  </div>
+  <div class="plan">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+
+        {{'PricingModule.basic' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$29</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+      <li><i class="ion-checkmark"> </i>10GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>10 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>500Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <div class="plan-select"><a href="">{{'PricingModule.select_plan' | translate }}</a></div>
+  </div>
+  <div class="plan featured">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+
+        {{'PricingModule.professional' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$49</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+      <li><i class="ion-checkmark"> </i>25GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>25 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>2000Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <!-- <div class="plan-select"><a href="">Select Plan</a></div> -->
+    <div id="paypal-button-container-one"></div>
+  </div>
+  <div class="plan">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+
+        {{'PricingModule.ultra' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$99</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang"  [ngStyle]="checkForScreen()?{'text-align': 'right'}:{}">
+      <li><i class="ion-checkmark"> </i>100GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>Unlimited {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>10000Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <!-- <div class="plan-select"><a href="">Select Plan</a></div> -->
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+
+<!-- ------------------------For Right to Left Flow------------------------- -->
+<div class="snip1404" *ngIf="checkForRTL()" style="background-image:linear-gradient(45deg,purple,orange)" >
+  <div class="plan">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang" style="text-align: right;">
+
+        {{'PricingModule.ultra' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$99</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <br>
+    <ul class="plan-features" [ngClass]="lang" style="text-align: right;" >
+      <li><i class="ion-checkmark"> </i>100GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>Unlimited {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>10000Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <!-- <div class="plan-select"><a href="">Select Plan</a></div> -->
+    <div id="paypal-button-container"></div>
+  </div>
+  <div class="plan featured">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang" style="text-align: right;">
+
+        {{'PricingModule.professional' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$49</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang" style="text-align: right;" >
+      <li><i class="ion-checkmark"> </i>25GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>25 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>2000Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <!-- <div class="plan-select"><a href="">Select Plan</a></div> -->
+    <div id="paypal-button-container-one"></div>
+  </div>
+  <div class="plan">
+    <header>
+      <h4 class="plan-title"  [ngClass]="lang" style="text-align: right;">
+
+        {{'PricingModule.basic' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$29</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang" style="text-align: right;" >
+      <li><i class="ion-checkmark"> </i>10GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>10 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>500Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <div class="plan-select" [ngClass]="lang"><a href="">{{'PricingModule.select_plan' | translate }}</a></div>
+  </div>
+  <div class="plan">
+    <header>
+      <h4 class="plan-title" [ngClass]="lang" style="text-align: right;">
+        {{'PricingModule.starter' | translate }}
+      </h4>
+      <div class="plan-cost" [ngClass]="lang"><span class="plan-price">$19</span><span class="plan-type">/{{'PricingModule.month' | translate }}</span></div>
+    </header>
+    <ul class="plan-features" [ngClass]="lang" style="text-align: right;" >
+      <li><i class="ion-checkmark"> </i>5GB {{'PricingModule.linux_web_space' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>5 {{'PricingModule.mysql_databases' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.unlimited_email' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>250Gb {{'PricingModule.mo_transfer' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>24/7 {{'PricingModule.tech_support' | translate }}</li>
+      <li><i class="ion-checkmark"> </i>{{'PricingModule.daily_backups' | translate }}</li>
+    </ul>
+    <div class="plan-select" [ngClass]="lang" ><a href="">{{'PricingModule.select_plan' | translate }}</a></div>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+<button [ngClass]="lang" (click)="goBack()" class="back">
+  {{'FaqModule.Back' | translate }}
+</button>
+<!-- <div  style="height:100px; width:100px; background:#e2e2e2">hello mouseover</div> -->
+<!-- <br/><br/> -->
+
+
+
+
+
+<div id="content" class="scroll">
+  <h1 [ngClass]="lang">{{'FaqModule.main_head' | translate }}.</h1>
+<span [ngClass]="lang">{{'FaqModule.faq' | translate }}</span>
+<label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_1' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_1' | translate }}
+      <hr/>
+    </div>
+
+  </label>
+
+
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_2' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_2' | translate }}.
+    <hr/>
+    </div>
+  </label>
+
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_3' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_3' | translate }} .
+      <hr/>
+      </div>
+  </label>
+
+
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_4' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_4' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_5' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_5' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_6' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_6' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_7' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_7' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_8' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_8' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_9' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_9' | translate }}
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_10' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_10' | translate }}.
+      <hr/>
+    </div>
+  </label>
+  <label class="collapsible">
+    <input type="checkbox" />
+    <span class="arrow"  [ngStyle]="checkForRTL()?{'float':'right'}:{}">{{checkForRTL()?'<':'>'}} </span>
+    <span class="collapser" [ngClass]="lang">{{'FaqModule.question_11' | translate }} {{checkForRTL()?'؟':'?'}} </span>
+    <div class="collapsed" [ngClass]="lang">{{'FaqModule.ans_11' | translate }}.
+      <hr/>
+    </div>
+  </label>
+
+
+
+
+</div>
+
+

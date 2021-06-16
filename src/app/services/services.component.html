@@ -1,0 +1,145 @@
+
+<section id="services">
+   
+    <div class="overlay"></div>
+    <div class="gradient-overlay"></div>
+    <button [ngClass]="lang" (click)="goBack()" class="back">
+        {{'ServiceModule.Back' | translate }}
+      </button>
+    <div class="row narrow section-intro with-bottom-sep animate-this">
+       
+        <div class="col-full">
+
+                <h3 [ngClass]="lang">{{'ServiceModule.services' | translate }}</h3>
+               <h1 [ngClass]="lang">{{'ServiceModule.what_we_do' | translate }}.</h1>
+
+               <p class="lead" [ngClass]="lang">{{'ServiceModule.brief' | translate }}.</p>
+
+       </div> <!-- end col-full -->
+    </div> <!-- end row -->
+
+    <div class="row services-content">
+
+      <div *ngIf="!checkForRTL()" class="services-list block-1-2 block-tab-full group">
+
+           <div class="bgrid service-item animate-this">
+
+               <span class="icon"><i class="icon-paint-brush"></i></span>
+
+             <div class="service-content">
+                 <h3 class="h05" [ngClass]="lang">{{'ServiceModule.branding' | translate }}</h3>
+
+                 <p [ngClass]="lang">
+                  {{'ServiceModule.brand_info' | translate }}.
+                  </p>
+              </div>
+
+             </div> <!-- end bgrid -->
+
+             <div class="bgrid service-item animate-this">
+
+                 <span class="icon"><i class="icon-earth"></i></span>
+
+             <div class="service-content">
+                 <h3 class="h05" [ngClass]="lang">{{'ServiceModule.web_design' | translate }}</h3>
+
+                 <p [ngClass]="lang">
+                  {{'ServiceModule.web_design_info' | translate }}.
+                  </p>
+             </div>
+
+            </div> <!-- end bgrid -->
+
+            <div class="bgrid service-item animate-this">
+
+                <span class="icon"><i class="icon-lego-block"></i></span>
+
+             <div class="service-content">
+                 <h3 class="h05" [ngClass]="lang">{{'ServiceModule.web_develop' | translate }}</h3>
+
+                 <p [ngClass]="lang">
+                  {{'ServiceModule.web_info' | translate }}.
+                 </p>
+             </div>
+
+            </div> <!-- end bgrid -->
+
+             <div class="bgrid service-item animate-this">
+
+                 <span class="icon"><i class="icon-megaphone"></i></span>
+
+             <div class="service-content">
+                 <h3 class="h05" [ngClass]="lang">{{'ServiceModule.marketing' | translate }}</h3>
+
+                 <p [ngClass]="lang">
+                  {{'ServiceModule.marketing_info' | translate }}.
+                  </p>
+             </div>
+
+             </div> <!-- end bgrid -->
+
+       </div> <!-- end services-list -->
+
+       <div *ngIf="checkForRTL()" class="services-list block-1-2 block-tab-full group">
+
+        <div class="bgrid service-item animate-this">
+
+          <span class="icon"><i class="icon-earth"></i></span>
+
+          <div class="service-content">
+              <h3 class="h05" [ngClass]="lang">{{'ServiceModule.web_design' | translate }}</h3>
+
+              <p [ngClass]="lang">
+              {{'ServiceModule.web_design_info' | translate }}.
+              </p>
+          </div>
+
+        </div> <!-- end bgrid -->
+
+        <div class="bgrid service-item animate-this">
+
+            <span class="icon"><i class="icon-paint-brush"></i></span>
+
+          <div class="service-content">
+              <h3 class="h05" [ngClass]="lang">{{'ServiceModule.branding' | translate }}</h3>
+
+              <p [ngClass]="lang">
+               {{'ServiceModule.brand_info' | translate }}.
+               </p>
+           </div>
+
+          </div> <!-- end bgrid -->
+
+        <div class="bgrid service-item animate-this">
+
+          <span class="icon"><i class="icon-megaphone"></i></span>
+
+        <div class="service-content">
+            <h3 class="h05" [ngClass]="lang">{{'ServiceModule.marketing' | translate }}</h3>
+
+            <p [ngClass]="lang">
+             {{'ServiceModule.marketing_info' | translate }}.
+             </p>
+        </div>
+
+        </div> <!-- end bgrid -->
+
+         <div class="bgrid service-item animate-this">
+
+             <span class="icon"><i class="icon-lego-block"></i></span>
+
+          <div class="service-content">
+              <h3 class="h05" [ngClass]="lang">{{'ServiceModule.web_develop' | translate }}</h3>
+
+              <p [ngClass]="lang">
+               {{'ServiceModule.web_info' | translate }}.
+              </p>
+          </div>
+
+         </div> <!-- end bgrid -->
+
+      </div> <!-- end services-list -->
+    </div> <!-- end services-content -->
+
+</section> <!-- end services -->
+

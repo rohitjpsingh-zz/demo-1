@@ -1,0 +1,172 @@
+   <!-- home
+   ================================================== -->
+   <header> 
+  
+    <div class="header-logo">
+      <a href="/">Fardos</a>
+   </div> 
+ 
+     <div class="dropdown">
+    
+       <button class="dropbtn"> &#9776; MENU</button>
+      
+   
+   
+      
+       
+      <div class="dropdown-content">
+      <!-- <div class="close" (click)="close()" style="color: white; float: right;">X</div> -->
+      <!-- <div style="color: white; margin-left: 5%;  font-weight: bolder; font-size: x-large; ">Fardos.</div> -->
+     
+      
+      <!-- <a class="menuLinks" href="#">Link 1</a>
+      <a  class="menuLinks" href="#">Link 2</a>
+      <a  class="menuLinks"  href="#">Link 3</a> -->
+    
+      <h3>Fardos.dev</h3>  
+    
+      <ul class="nav-list">
+        <!-- <li class="current"><a class="smoothscroll"  title="" routerLink="/"  >  {{'HomeModule.home' | translate }}</a></li> -->
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/about"  >  {{'HomeModule.about' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/services"  >  {{'HomeModule.services' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/contact"  >  {{'HomeModule.contact_us' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/faq"  >  {{'HomeModule.faq' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/testimonials"  >  {{'HomeModule.testmonials' | translate }}</a></li>
+        <!-- <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/pricing"  >  {{'HomeModule.pricing' | translate }}</a></li> -->
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/portfolio"  >  {{'HomeModule.portfolio' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/footer"  > {{'HomeModule.links' | translate }}</a></li>
+        <li ><a class="smoothscroll"   [ngClass]="lang" title="" href="https://fardos-dev.medium.com"  >{{'HomeModule.blog' | translate }}</a></li>
+        <!-- <li ><a class="smoothscroll"   [ngClass]="lang" title="" routerLink="/links"  >  linksssssss</a></li> -->
+      </ul> 
+    
+      <!-- <p class="sponsor-text">
+        Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
+        Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+        Simply type  the promocode in the box labeled “Promo Code” when placing your order.
+      </p>       -->
+    
+      <ul class="header-social-list">
+           <li>
+             <a href="https://www.facebook.com/Fardos.dev"><i class="fa fa-facebook-square"></i></a>
+           </li>
+           <li>
+             <a href="https://twitter.com/DevFardos"><i class="fa fa-twitter"></i></a>
+           </li>
+           <li>
+             <a href="https://www.instagram.com/fardos.dev/"><i class="fa fa-instagram"></i></a>
+           </li>
+           
+           <li>
+             <a href="https://www.youtube.com/channel/UCN_trwCWoIaPOpEQK8qSu6w?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+           </li>
+           <li>
+            <a href="https://www.linkedin.com/company/fardos-sol/"><i class="fa fa-linkedin"></i></a>
+          </li>  
+          
+        </ul>   
+    
+       
+      </div>
+     
+    </div>
+    
+    
+
+
+ </header>
+   <section id="home">
+
+    <div class="overlay"></div>
+
+    <div class="home-content-table">
+        <div class="home-content-tablecell">
+            <div class="row">
+                <div class="col-twelve">
+                          <br>
+                          <br>
+                           <h3 class="animate-intro" [ngClass]="lang">{{'HomeModule.we_are' | translate }} Fardos.dev</h3>
+                           <h1 class="animate-intro" [ngClass]="lang">
+                            {{'HomeModule.we_craft_stunning' | translate }}  <br>
+                            {{'HomeModule.digital_experiences' | translate }}.
+                           </h1>
+                           <div class="more animate-intro" [ngClass]="lang">
+                            <a  [ngClass]="lang"  class="smoothscroll button stroke" routerLink ="/portfolio" >
+                              {{'HomeModule.portfolio' | translate }}
+                            </a>
+                        </div>
+                     
+                           <div class="more animate-intro" [ngClass]="lang">
+                            <a  [ngClass]="lang"  class="smoothscroll button stroke" routerLink ="/services" >
+                              {{'HomeModule.services' | translate }}
+                            </a>
+                        </div>
+                           <div class="more animate-intro" [ngClass]="lang">
+                            <a  [ngClass]="lang"  class="smoothscroll button stroke" routerLink ="/about" >
+                              {{'HomeModule.learn_more' | translate }}
+                            </a>
+                        </div>
+                        <div class="more animate-intro" [ngClass]="lang">
+                          <a  [ngClass]="lang"  class="smoothscroll button stroke" routerLink ="/contact" >
+                            {{'HomeModule.contact_us' | translate }}
+                          </a>
+                      </div>
+
+                    
+
+                   
+                    <div class="more animate-intro" [ngClass]="lang">
+                      <a  [ngClass]="lang"  class="smoothscroll button stroke" routerLink ="/faq" >{{'HomeModule.faq' | translate }}
+                      </a>
+                  </div>
+                   
+
+
+
+
+
+                   </div> <!-- end col-twelve -->
+            </div> <!-- end row -->
+        </div> <!-- end home-content-tablecell -->
+     </div> <!-- end home-content-table -->
+
+     <ul class="home-social-list">
+       <li class="animate-intro">
+             <a href="https://www.facebook.com/Fardos.dev"><i class="fa fa-facebook-square"></i></a>
+       </li>
+       <li class="animate-intro">
+             <a href="https://twitter.com/DevFardos"><i class="fa fa-twitter"></i></a>
+       </li>
+       <li class="animate-intro">
+             <a href="https://www.instagram.com/fardos.dev/"><i class="fa fa-instagram"></i></a>
+       </li>
+      <li class="animate-intro">
+            <a href="https://www.youtube.com/channel/UCN_trwCWoIaPOpEQK8qSu6w?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+      </li>
+
+       <li class="animate-intro">
+        <a href="https://www.linkedin.com/company/fardos-sol/"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li class="animate-intro">
+          <a href="https://fardos-dev.medium.com/"><i class="fa fa-medium"></i></a>
+        </li>
+
+        <li class="animate-intro">
+          <a (click)="switchLang('ar')" title="arabic" style="cursor: pointer;">Ar</a>
+        </li>
+
+        <li class="animate-intro">
+          <a (click)="switchLang('en')" title="english" style="cursor: pointer;">En</a>
+        </li>
+
+        <li class="animate-intro">
+          <a (click)="switchLang('ru')" title="russian" style="cursor: pointer;">Ru</a>
+        </li>
+
+        <li class="animate-intro">
+          <a (click)="switchLang('he')" title="hebrew" style="cursor: pointer;">He</a>
+        </li>
+    </ul> <!-- end home-social-list -->
+
+
+
+</section> <!-- end home -->

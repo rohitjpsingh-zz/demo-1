@@ -1,0 +1,242 @@
+<!-- header -->
+<app-header #head></app-header>
+<section id="contact">
+
+<div class="notify" *ngIf="showNotification">
+  <div class="row notifyType" *ngIf="!head.checkForRTL()">
+    <div class="col-one tab-full"><i [ngClass]="error? 'fa fa-times iconToggleFail' : 'fa fa-check-circle iconToggleSuccess'"></i>
+    </div>
+    <div class="col-eleven tab-full" *ngIf="!error" [ngClass]="lang" id="notifyType">{{'ContactModule.form_submit_success' | translate}}.
+    </div>
+    <div class="col-eleven tab-full" *ngIf="error" [ngClass]="lang" id="notifyType">{{'ContactModule.form_error_success' | translate}}.
+    </div>
+  </div>
+  <div class="row notifyType" *ngIf="head.checkForRTL()">
+    <div class="col-eleven tab-full" *ngIf="!error" [ngClass]="lang" id="notifyType">{{'ContactModule.form_submit_success' | translate}}.
+    </div>
+    <div class="col-eleven tab-full" *ngIf="error" [ngClass]="lang" id="notifyType">{{'ContactModule.form_error_success' | translate}}.
+    </div>
+    <div class="col-one tab-full"><i [ngClass]="error? 'fa fa-times iconToggleFail' : 'fa fa-check-circle iconToggleSuccess'"></i>
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>
+<!-- <button [ngClass]="lang" (click)="goBack()" class="back">
+  {{'FaqModule.Back' | translate }}
+</button> -->
+  <div class="row narrow section-intro with-bottom-sep animate-this">
+      <div class="col-twelve">
+          <h3 [ngClass]="lang">{{'ContactModule.contact' | translate }}</h3>
+          <h1 [ngClass]="lang">{{'ContactModule.get_in_touch' | translate }}.</h1>
+
+          <p class="lead" [ngClass]="lang">
+            {{'ContactModule.fardos_dev' | translate }}
+          </p>
+      </div>
+  </div> <!-- end section-intro -->
+
+  <div class="row contact-content">
+
+      <div *ngIf="!head.checkForRTL()" class="col-seven tab-full animate-this">
+
+          <h5 [ngClass]="lang">{{'ContactModule.send_us_a_message' | translate }}</h5>
+
+      <!-- form -->
+      <form name="contactForm" id="contactForm" method="post">
+
+          <div class="form-field">
+                  <input [ngClass]="lang" [(ngModel)]="post.name"  name="contactName" value="" type="text" id="contactName" placeholder="{{'ContactModule.name' | translate }}" minlength="2" required="" [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="row">
+                <div class="col-six tab-full">
+                    <div class="form-field">
+                        <input [ngClass]="lang" [(ngModel)]="post.email" name="contactEmail" type="email" id="contactEmail" placeholder="{{'ContactModule.email' | translate }}" value="" required="">
+                    </div>
+              </div>
+              <div class="col-six tab-full">
+                  <div class="form-field">
+                      <input [ngClass]="lang" [(ngModel)]="post.subject" name="contactSubject" type="text" id="contactSubject" placeholder="{{'ContactModule.subject' | translate }}" value="">
+                </div>
+              </div>
+          </div>
+
+          <div class="form-field">
+                <textarea [ngClass]="lang" [(ngModel)]="post.message" name="contactMessage" id="contactMessage" placeholder="{{'ContactModule.message' | translate }}" rows="10" cols="50" required=""></textarea>
+          </div>
+
+          <div class="form-field">
+            <button class="submitform" [ngClass]="lang" (click)="submitForm()" >{{'ContactModule.submit' | translate }}</button>
+
+            <div id="submit-loader">
+                <div class="text-loader" [ngClass]="lang">{{'ContactModule.sending' | translate }}...</div>
+                    <div class="s-loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                      </div>
+                  </div>
+          </div>
+
+        </form> <!-- end form -->
+
+      <!-- contact-warning -->
+      <div id="message-warning"></div>
+
+      <!-- contact-success -->
+        <div id="message-success" [ngClass]="lang">
+          <i class="fa fa-check"></i>{{'ContactModule.success_message' | translate }}!<br>
+        </div>
+
+    </div> <!-- end col-seven -->
+
+    <div *ngIf="!head.checkForRTL()" class="col-four tab-full contact-info end animate-this">
+
+        <h5 [ngClass]="lang">{{'ContactModule.contact_info' | translate }}</h5>
+
+        <div class="cinfo">
+              <h6 [ngClass]="lang">{{'ContactModule.where_to_find_us' | translate }}</h6>
+              <p [ngClass]="lang">
+                <a href="https://www.facebook.com/Fardos.Solutions">{{'ContactModule.facebook' | translate }}</a>
+                <br>
+                <a href="https://twitter.com/DevFardos">{{'ContactModule.twitter' | translate }}</a>
+                <br>
+                <a href="https://www.instagram.com/fardosdev/">{{'ContactModule.instagram' | translate }}</a>
+                <br>
+              <a href="https://www.linkedin.com/company/firdos-sol/">{{'ContactModule.linkedIn' | translate }}</a>
+                <br>
+              <a href="#">{{'ContactModule.tikTok' | translate }}</a>
+                <br>
+                <a href="#">{{'ContactModule.youtube' | translate }}</a>
+
+              <br>
+
+          </p>
+          </div> <!-- end cinfo -->
+
+          <div class="cinfo">
+              <h6 [ngClass]="lang">{{'ContactModule.email_us_at' | translate }}</h6>
+              <p [ngClass]="lang">
+                  <!-- fardos.dev@gmail.com<br>	 -->
+                  <a href="mailto:contact@fardos.dev">contact@fardos.dev</a>
+
+              </p>
+          </div> <!-- end cinfo -->
+
+          <div class="cinfo">
+              <h6 [ngClass]="lang">{{'ContactModule.chat_us_at' | translate }}</h6>
+              <p [ngClass]="lang">
+                <a href=" https://tawk.to/chat/5fc9f1bc920fc91564cd5c5c/default">{{'ContactModule.our_chat_link' | translate }}   </a>
+
+
+              </p>
+          </div>
+          <!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+
+    </div> <!-- end cinfo -->
+
+    <div *ngIf="head.checkForRTL()" class="col-four tab-full contact-info  animate-this">
+
+    <h5 [ngClass]="lang">{{'ContactModule.contact_info' | translate }}</h5>
+
+    <div class="cinfo">
+          <h6 [ngClass]="lang">{{'ContactModule.where_to_find_us' | translate }}</h6>
+          <p [ngClass]="lang">
+              <a href="https://www.facebook.com/Fardos.Solutions">{{'ContactModule.facebook' | translate }}</a>
+              <br>
+              <a href="https://twitter.com/DevFardos">{{'ContactModule.twitter' | translate }}</a>
+              <br>
+            <a href="https://www.instagram.com/fardosdev/">{{'ContactModule.instagram' | translate }}</a>
+              <br>
+            <a href="https://www.linkedin.com/company/firdos-sol/">{{'ContactModule.linkedIn' | translate }}</a>
+            <br>
+            <a href="#">{{'ContactModule.tikTok' | translate }}</a>
+            <br>
+            <a href="#">{{'ContactModule.youtube' | translate }}</a>
+
+            <br>
+
+        </p>
+      </div> <!-- end cinfo -->
+
+      <div class="cinfo">
+          <h6 [ngClass]="lang">{{'ContactModule.email_us_at' | translate }}</h6>
+          <p [ngClass]="lang">
+              <!-- fardos.dev@gmail.com<br>	 -->
+              <a href="mailto:fardos.dev@gmail.com">fardos.dev@gmail.com</a>
+
+          </p>
+      </div> <!-- end cinfo -->
+
+      <div class="cinfo">
+          <h6 [ngClass]="lang">{{'ContactModule.chat_us_at' | translate }}</h6>
+          <p [ngClass]="lang">
+              <a href=" https://tawk.to/chat/5fc9f1bc920fc91564cd5c5c/default">{{'ContactModule.our_chat_link' | translate }}   </a>
+
+
+          </p>
+      </div>
+      <!--Start of Tawk.to Script-->
+
+<!--End of Tawk.to Script-->
+
+</div> <!-- end cinfo -->
+
+      <div *ngIf="head.checkForRTL()" class="col-seven tab-full end animate-this">
+
+          <h5 [ngClass]="lang">{{'ContactModule.send_us_a_message' | translate }}</h5>
+
+      <!-- form -->
+      <form name="contactForm" id="contactForm" method="post">
+
+          <div class="form-field">
+                  <input [ngClass]="lang" [(ngModel)]="post.name"  name="contactName" value="" type="text" id="contactName" placeholder="{{'ContactModule.name' | translate }}" minlength="2" required="" [ngModelOptions]="{standalone: true}">
+          </div>
+
+          <div class="row">
+                <div class="col-six tab-full">
+                    <div class="form-field">
+                        <input [ngClass]="lang" [(ngModel)]="post.email" name="contactEmail" type="email" id="contactEmail" placeholder="{{'ContactModule.email' | translate }}" value="" required="">
+                    </div>
+              </div>
+              <div class="col-six tab-full">
+                  <div class="form-field">
+                      <input [ngClass]="lang" [(ngModel)]="post.subject" name="contactSubject" type="text" id="contactSubject" placeholder="{{'ContactModule.subject' | translate }}" value="">
+                </div>
+              </div>
+          </div>
+
+          <div class="form-field">
+                <textarea [ngClass]="lang" [(ngModel)]="post.message" name="contactMessage" id="contactMessage" placeholder="{{'ContactModule.message' | translate }}" rows="10" cols="50" required=""></textarea>
+          </div>
+
+          <div class="form-field">
+            <button class="submitform" [ngClass]="lang" (click)="submitForm()" >{{'ContactModule.submit' | translate }}</button>
+
+            <div id="submit-loader">
+                <div class="text-loader" [ngClass]="lang">{{'ContactModule.sending' | translate }}...</div>
+                    <div class="s-loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                      </div>
+                  </div>
+          </div>
+
+        </form> <!-- end form -->
+
+      <!-- contact-warning -->
+      <div id="message-warning"></div>
+
+      <!-- contact-success -->
+        <div id="message-success" [ngClass]="lang">
+          <i class="fa fa-check"></i>{{'ContactModule.success_message' | translate }}!<br>
+        </div>
+
+    </div> <!-- end col-seven -->
+  </div> <!-- end row contact-content -->
+
+<!-- <h1 [ngClass]="lang">{{'ContactModule.frequently_asked_questions' | translate }}</h1> -->
+</section> <!-- end contact -->

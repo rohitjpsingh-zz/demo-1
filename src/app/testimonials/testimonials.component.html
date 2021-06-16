@@ -1,0 +1,51 @@
+<section id="testimonials">
+   <button [ngClass]="lang" (click)="goBack()" class="back">
+      {{'FaqModule.Back' | translate }}
+    </button>
+    <div class="row">
+        <div class="col-twelve">
+            <h2 class="animate-this" [ngClass]="lang">{{'TestimonialsModule.quotes_of_the_day' | translate }}</h2>
+        </div>
+    </div>
+
+   <div class="row flex-container">
+
+      <div id="testimonial-slider" class="flex-slider animate-this">
+
+         <ul class="slides">
+
+            <li [ngClass]="!checkForRTL()?'rtl':'ltr'">
+               <p [ngClass]="lang">
+                {{'TestimonialsModule.quote_1' | translate }}.
+               </p>
+
+               <div class="testimonial-author">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/220px-Shakespeare.jpg" alt="Author image">
+                     <div class="author-info" [ngClass]="lang">
+                      {{'TestimonialsModule.quote_1_writer' | translate }}
+                         <span class="position" [ngClass]="lang">{{'TestimonialsModule.quote_1_info' | translate }}</span>
+                     </div>
+               </div>
+              </li> <!-- end slide -->
+
+              <li [ngClass]="!checkForRTL()?'rtl':'ltr'">
+                <p [ngClass]="lang">
+                 {{'TestimonialsModule.quote_2' | translate }}.
+                </p>
+
+                <div class="testimonial-author">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Helen_KellerA.jpg" alt="Author image">
+                     <div class="author-info" [ngClass]="lang">
+                      {{'TestimonialsModule.quote_2_writer' | translate }}
+                         <span [ngClass]="lang">{{'TestimonialsModule.quote_2_info' | translate }}</span>
+                     </div>
+               </div>
+            </li> <!-- end slide -->
+
+         </ul> <!-- end slides -->
+
+      </div> <!-- end testimonial-slider -->
+
+   </div> <!-- end flex-container -->
+
+</section> <!-- end testimonials -->
